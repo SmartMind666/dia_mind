@@ -83,78 +83,6 @@ def get_sft2_train_dataset(tokenizer):
     return dataset['train'], tokenizer
 
 
-def get_reasoning_train_dataset(tokenizer):
-    dataset = load_dataset("csv", data_files='./qa-reasoning/qa_reasoning_all.csv')
-
-    # Function to convert Dolly format to conversation format
-    def qa_to_conversation(example):
-        conversation = [
-            {"role": "system",
-             "content": "你是一位经验丰富的临床医学专家，具备深厚的专业知识和丰富的临床经验，能够从患者提供的症状和病史入手，进行系统性评估和缜密推理。通过对病情的逐步剖析，，最终为患者提供科学、合理且个性化的医疗建议"},
-            {"role": "user", "content": example["query"]},
-            {"role": "assistant", "content": f"<think>\n{example['thinking']}\n</think>\n{example['answer']}"},
-        ]
-        return {"conversations": conversation}
-
-    # Convert the dataset
-    dataset = dataset.map(qa_to_conversation)
-
-    # Function to format conversations using the tokenizer
-    def formatting_prompts_func(examples):
-        convos = examples["conversations"]
-        texts = [tokenizer.apply_chat_template(convo, tokenize=False) for convo in convos]
-        return {"text": texts}
-
-    # Apply the formatting function to the dataset
-    dataset = dataset.map(formatting_prompts_func, batched=True)
-    return dataset['train'], tokenizer
-
-
-def get_reasoning_rag_train_dataset(tokenizer):
-    dataset = load_dataset("csv", data_files='./qa-reasoning-rag/qa_rag_reasoning_all.csv')
-
-    # Function to convert Dolly format to conversation format
-    def qa_to_conversation(example):
-        conversation = [
-            {"role": "system",
-             "content": f"""你是一位经验丰富的临床医学专家，具备深厚的专业知识和丰富的临床经验，能够从患者提供的症状和病史入手，结合提供的资料和自身知识，进行系统性评估和缜密推理。通过对病情的逐步剖析，，最终为患者提供科学、合理且个性化的医疗建议。以下是可供参考的资料：\n{example["context"]}"""},
-            {"role": "user", "content": example["query"]},
-            {"role": "assistant", "content": f"<think>\n{example['thinking']}\n</think>\n{example['answer']}"},
-        ]
-        return {"conversations": conversation}
-
-    # Convert the dataset
-    dataset = dataset.map(qa_to_conversation)
-
-    # Function to format conversations using the tokenizer
-    def formatting_prompts_func(examples):
-        convos = examples["conversations"]
-        texts = [tokenizer.apply_chat_template(convo, tokenize=False) for convo in convos]
-        return {"text": texts}
-
-    # Apply the formatting function to the dataset
-    dataset = dataset.map(formatting_prompts_func, batched=True)
-    return dataset['train'], tokenizer
-
-
-import re
-
-
-def extract_content(text):
-    pattern = r'</think>\s*([^\s].*?)\s*<\|im_end\|>'
-    match = re.search(pattern, text)
-    if match:
-        content = match.group(1).strip()
-        return content
-    else:
-        # 如果没有找到匹配的<|im_end|>，提取</think>后面的所有非空白字符开始的内容
-        pattern_all = r'</think>\s*([^\s].*)'
-        match_all = re.search(pattern_all, text)
-        if match_all:
-            return match_all.group(1).strip()
-        else:
-            return text
-
 
 from bert_score import score as bert_score
 from nltk.translate.bleu_score import corpus_bleu, SmoothingFunction
@@ -202,7 +130,7 @@ def evaluate(model, tokenizer, dataset_path, generate_response_func, max_new_tok
       )
       res = tokenizer.decode(outputs[0][inputs.shape[1]:], skip_special_tokens=True)
       return res
-        
+
     def generate_response_without_instrct(query, context):
         messages = f"<|im_start|>user\n{query}<|im_end|>\n<|im_start|>assistant\n"
         inputs = tokenizer(
@@ -222,55 +150,10 @@ def evaluate(model, tokenizer, dataset_path, generate_response_func, max_new_tok
         res = tokenizer.decode(outputs[0][inputs["input_ids"].shape[1]:], skip_special_tokens=True)
         return res
 
-    def generate_response_reasoning(query, context):
-        messages = [{"role": "system",
-                     "content": "你是一位经验丰富的临床医学专家，具备深厚的专业知识和丰富的临床经验，能够从患者提供的症状和病史入手，进行系统性评估和缜密推理。通过对病情的逐步剖析，，最终为患者提供科学、合理且个性化的医疗建议"},
-                    {"role": "user", "content": query}]
-        inputs = tokenizer.apply_chat_template(
-            messages,
-            tokenize=True,
-            add_generation_prompt=True,
-            return_tensors="pt"
-        ).to("cuda")
-
-        outputs = model.generate(
-            input_ids=inputs,
-            max_new_tokens=max_new_tokens,
-            use_cache=True,
-            temperature=0.9,
-            num_return_sequences=1
-        )
-        res = tokenizer.decode(outputs[0][inputs.shape[1]:], skip_special_tokens=True)
-        res = extract_content(res)
-        return res
-
-    def generate_response_reasoning_rag(query, context):
-        messages = [{"role": "system",
-                     "content": f"""你是一位经验丰富的临床医学专家，具备深厚的专业知识和丰富的临床经验，能够从患者提供的症状和病史入手，结合提供的资料和自身知识，进行系统性评估和缜密推理。通过对病情的逐步剖析，，最终为患者提供科学、合理且个性化的医疗建议。以下是可供参考的资料：\n{context}"""},
-                    {"role": "user", "content": query}]
-        inputs = tokenizer.apply_chat_template(
-            messages,
-            tokenize=True,
-            add_generation_prompt=True,
-            return_tensors="pt"
-        ).to("cuda")
-
-        outputs = model.generate(
-            input_ids=inputs,
-            max_new_tokens=max_new_tokens,
-            use_cache=True,
-            temperature=0.9,
-            num_return_sequences=1
-        )
-        res = tokenizer.decode(outputs[0][inputs.shape[1]:], skip_special_tokens=True)
-        res = extract_content(res)
-        return res
 
     # Evaluate the model
     gr_func = {
         "generate_response": generate_response,
-        "generate_response_reasoning": generate_response_reasoning,
-        "generate_response_reasoning_rag": generate_response_reasoning_rag,
         "generate_response_without_instrct": generate_response_without_instrct
     }
     for example in tqdm(test_dataset, 'evaluating..'):
@@ -363,7 +246,7 @@ def train_sft1(model_path, model_name):
     dtype = None
     load_in_4bit = True
     model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name=f"{model_path}/{model_name}",
+        model_name=model_name,
         max_seq_length=max_seq_length,
         dtype=dtype
     )
@@ -423,10 +306,10 @@ def train_sft1(model_path, model_name):
         trainer_stats = trainer.train()
     FastLanguageModel.for_inference(model)  # Enable native 2x faster inference
     model.save_pretrained_merged(
-        save_directory=f"{model_path}/ckpts/{model_name}_sft1",  # 指定保存路径
+        save_directory=f"{model_path}/{model_name}_sft1",  # 指定保存路径
         tokenizer=tokenizer,
         save_method="merged_16bit")
-    evaluate(model, tokenizer, generate_response_func='generate_response', dataset_path='./qa_test/qa_test.csv',
+    evaluate(model, tokenizer, generate_response_func='generate_response_without_instrct', dataset_path='./qa_test/qa_test.csv',
              model_name=model_name)
 
 
@@ -436,7 +319,7 @@ def train_sft2(model_path, model_name):
     dtype = None
     load_in_4bit = True
     model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name=f"{model_path}/ckpts/{model_name}_sft1",
+        model_name=f"{model_path}/{model_name}_sft1",
         max_seq_length=max_seq_length,
         dtype=dtype
     )
@@ -499,16 +382,16 @@ def train_sft2(model_path, model_name):
         save_directory=f"{model_path}/ckpts/{model_name}_sft2",  # 指定保存路径
         tokenizer=tokenizer,
         save_method="merged_16bit")
-    evaluate(model, tokenizer, generate_response_func='generate_response',
+    evaluate(model, tokenizer, generate_response_func='generate_response_without_instrct',
              dataset_path='./diabetes_qa_test/diabetes_qa_test.csv', model_name=f"{model_name}_sft2")
 
-def train_sft2_without_sft1_no_instruct(model_path, model_name):
+def train_sft3(model_path, model_name):
     import torch
     max_seq_length = 8092
     dtype = None
     load_in_4bit = True
     model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name=f"{model_path}/{model_name}",
+        model_name=model_name,
         max_seq_length=max_seq_length,
         dtype=dtype
     )
@@ -568,203 +451,14 @@ def train_sft2_without_sft1_no_instruct(model_path, model_name):
         trainer_stats = trainer.train()
     FastLanguageModel.for_inference(model)  # Enable native 2x faster inference
     model.save_pretrained_merged(
-        save_directory=f"{model_path}/ckpts/{model_name}_sft2_without_sft1",  # 指定保存路径
+        save_directory=f"{model_path}/{model_name}_sft2_without_sft1",  # 指定保存路径
         tokenizer=tokenizer,
         save_method="merged_16bit")
     res = evaluate(model, tokenizer, generate_response_func='generate_response_without_instrct',
              dataset_path='./diabetes_qa_test/diabetes_qa_test.csv', model_name=f"{model_name}_sft2_without_sft1")
     print(res)
 
-    
-def train_reasoning(model_path, model_name):
-    model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name=f"{model_path}/{model_name}_sft2",
-        max_seq_length=max_seq_length,
-        dtype=dtype
-    )
-    model = FastLanguageModel.get_peft_model(
-        model,
-        r=16,
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj",
-                        "gate_proj", "up_proj", "down_proj", ],
-        lora_alpha=16,
-        lora_dropout=0,  # Supports any, but = 0 is optimized
-        bias="none",
-        use_gradient_checkpointing="unsloth",  # True or "unsloth" for very long context
-        random_state=3834,
-        use_rslora=False,  # We support rank stabilized LoRA
-        loftq_config=None,  # And LoftQ
-    )
-    dataset, tokenizer = get_reasoning_train_dataset(tokenizer)
-
-    trainer = SFTTrainer(
-        model=model,
-        tokenizer=tokenizer,
-        train_dataset=dataset,
-        dataset_text_field="text",
-        max_seq_length=max_seq_length,
-        data_collator=DataCollatorForSeq2Seq(tokenizer=tokenizer),
-        dataset_num_proc=2,
-        packing=False,  # Can make training 5x faster for short sequences.
-        args=TrainingArguments(
-            per_device_train_batch_size=4,
-            gradient_accumulation_steps=2,
-            warmup_ratio=0.1,
-            num_train_epochs=1,  # Set this for 1 full training run.
-            # max_steps = 900,
-            learning_rate=3e-4,
-            fp16=not is_bfloat16_supported(),
-            bf16=is_bfloat16_supported(),
-            logging_steps=1,
-            optim="adamw_torch",
-            weight_decay=0.01,
-            lr_scheduler_type="linear",
-            seed=3834,
-            output_dir="outputs",
-            report_to="wandb",  # Use this for WandB etc
-            run_name=f"{model_name}_reasoning"
-        ),
-    )
-    trainer = train_on_responses_only(
-        trainer,
-        instruction_part="<|im_start|>user\n",
-        response_part="<|im_start|>assistant\n",
-    )
-    space = tokenizer(" ", add_special_tokens=False).input_ids[0]
-    print(tokenizer.decode([space if x == -100 else x for x in trainer.train_dataset[2]["labels"]]))
-    wandb.login(key="b53ad07343c259b3da79009271ce7e7b854dd637")
-    with wandb.init(project='diabetes', name=f"{model_name}_reasoning") as run:
-        trainer_stats = trainer.train()
-    FastLanguageModel.for_inference(model)  # Enable native 2x faster inference
-    model.save_pretrained_merged(
-        save_directory=f"{model_path}/ckpts/{model_name}_reasoning_rag",  # 指定保存路径
-        tokenizer=tokenizer,
-        save_method="merged_16bit")
-    # evaluate(model, tokenizer, generate_response_func='generate_response_reasoning',
-    #          dataset_path='./qa-reasoning/qa_reasoning_all.csv', max_new_tokens=5120, model_name=model_name)
-
-
-def train_rag_reasoning(model_path, model_name):
-    model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name=f"{model_path}/{model_name}_reasoning",
-        max_seq_length=80,
-        dtype=dtype
-    )
-    model = FastLanguageModel.get_peft_model(
-        model,
-        r=16,
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj",
-                        "gate_proj", "up_proj", "down_proj", ],
-        lora_alpha=16,
-        lora_dropout=0,  # Supports any, but = 0 is optimized
-        bias="none",
-        use_gradient_checkpointing="unsloth",  # True or "unsloth" for very long context
-        random_state=3834,
-        use_rslora=False,  # We support rank stabilized LoRA
-        loftq_config=None,  # And LoftQ
-    )
-    dataset, tokenizer = get_reasoning_rag_train_dataset(tokenizer)
-
-    trainer = SFTTrainer(
-        model=model,
-        tokenizer=tokenizer,
-        train_dataset=dataset,
-        dataset_text_field="text",
-        max_seq_length=max_seq_length,
-        data_collator=DataCollatorForSeq2Seq(tokenizer=tokenizer),
-        dataset_num_proc=2,
-        packing=False,  # Can make training 5x faster for short sequences.
-        args=TrainingArguments(
-            per_device_train_batch_size=4,
-            gradient_accumulation_steps=2,
-            warmup_ratio=0.1,
-            num_train_epochs=1,  # Set this for 1 full training run.
-            # max_steps = 900,
-            learning_rate=3e-4,
-            fp16=not is_bfloat16_supported(),
-            bf16=is_bfloat16_supported(),
-            logging_steps=1,
-            optim="adamw_torch",
-            weight_decay=0.01,
-            lr_scheduler_type="linear",
-            seed=3834,
-            output_dir="outputs",
-            report_to="wandb",  # Use this for WandB etc
-            run_name=f"{model_name}_reasoning_rag"
-        ),
-    )
-    trainer = train_on_responses_only(
-        trainer,
-        instruction_part="<|im_start|>user\n",
-        response_part="<|im_start|>assistant\n",
-    )
-    space = tokenizer(" ", add_special_tokens=False).input_ids[0]
-    print(tokenizer.decode([space if x == -100 else x for x in trainer.train_dataset[2]["labels"]]))
-    wandb.login(key="b53ad07343c259b3da79009271ce7e7b854dd637")
-    with wandb.init(project='diabetes', name=f"{model_name}_reasoning_rag") as run:
-        trainer_stats = trainer.train()
-    FastLanguageModel.for_inference(model)  # Enable native 2x faster inference
-    model.save_pretrained_merged(
-        save_directory=f"{model_path}/ckpts/{model_name}_reasoning_rag",  # 指定保存路径
-        tokenizer=tokenizer,
-        save_method="merged_16bit")
-    evaluate(model, tokenizer, generate_response_func='generate_response_reasoning_rag',
-             dataset_path='./qa-reasoning-rag/qa_rag_reasoning_all.csv', max_new_tokens=5120, model_name=model_name)
-
-
-def e():
-    model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name="/root/autodl-tmp/unsloth/ckpts/Qwen2.5-3B_sft2",
-        max_seq_length=8092,
-        dtype=None,
-        local_files_only=True
-    )
-    model = FastLanguageModel.get_peft_model(
-        model,
-        r=16,
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj",
-                        "gate_proj", "up_proj", "down_proj", ],
-        lora_alpha=16,
-        lora_dropout=0,  # Supports any, but = 0 is optimized
-        bias="none",
-        use_gradient_checkpointing="unsloth",  # True or "unsloth" for very long context
-        random_state=3834,
-        use_rslora=False,  # We support rank stabilized LoRA
-        loftq_config=None,  # And LoftQ
-    )
-    evaluate(model, tokenizer, generate_response_func='generate_response', dataset_path='./diabetes_qa_test/diabetes_qa_test.csv',
-             model_name="3B-sft2")
-def e1():
-    model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name="/root/autodl-tmp/ckpts/qwen-7b_sft2_without_sft1",
-        max_seq_length=8092,
-        dtype=None,
-        local_files_only=True
-    )
-    FastLanguageModel.for_inference(model)
-    res = evaluate(model, tokenizer, generate_response_func='generate_response_without_instrct', dataset_path='./diabetes_qa_test/diabetes_qa_test.csv',
-             model_name="7B-direct-sft2")
-    print(res)
-def e2():
-    model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name="/root/autodl-tmp/ckpts/qwen-7b_sft2_without_sft1",
-        max_seq_length=8092,
-        dtype=None,
-        local_files_only=True
-    )
-    model = FastLanguageModel.get_peft_model(
-        model,
-        r=16,
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj",
-                        "gate_proj", "up_proj", "down_proj", ],
-        lora_alpha=16,
-        lora_dropout=0,  # Supports any, but = 0 is optimized
-        bias="none",
-        use_gradient_checkpointing="unsloth",  # True or "unsloth" for very long context
-        random_state=3834,
-        use_rslora=False,  # We support rank stabilized LoRA
-        loftq_config=None,  # And LoftQ
-    )
-    evaluate(model, tokenizer, generate_response_func='generate_response', dataset_path='./qa_test/qa_test.csv',
-             model_name="3B-ori-sft1")
-e1()
+# code to train qwen2.5 series with no instruct for sft1, sft2, sft3
+train_sft1(model_path="/root/autodl-tmp/unsloth", model_name='Qwen2.5-7B')
+train_sft2(model_path="/root/autodl-tmp/unsloth", model_name='Qwen2.5-7B')
+train_sft3(model_path="/root/autodl-tmp/unsloth", model_name='Qwen2.5-7B')

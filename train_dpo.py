@@ -29,7 +29,7 @@ import numpy as np
 
 def get_dpo_train_dataset(tokenizer):
     dataset = load_dataset("csv", data_files='./dpo/dpo.csv')
-    rejected_list = ["dcotor", "Deepseekv3-withoutprompt", "Deepseekv3-withprompt"]
+    rejected_list = ["Deepseekv3-withoutprompt"]
     def qa_to_conversation(example):
         rejected = np.random.choice(rejected_list, 1)[0]
         # 构造完整对话结构
@@ -120,19 +120,6 @@ def get_dpo_test_dataset(tokenizer):
 
     return dataset['train'], tokenizer
 
-def get_dpo_test_dataset1(tokenizer):
-    dataset = load_dataset("csv", data_files='./dpo_test/dpo_test.csv')
-    # def qa_to_conversation(example):
-    #     rejected = 'Deepseekv3-withoutprompt'
-    #     formatted_prompt = f"<|im_start|>user\n{example['query']}<|im_end|>\n<|im_start|>assistant\n"
-    #     return {"query": formatted_prompt, "chosen": example["DeepseekR1"] + "<|im_end|>", "rejected": example[rejected] + "<|im_end|>"}
-
-    # # Convert the dataset
-    # dataset = dataset.map(qa_to_conversation)
-
-    return dataset['train'], tokenizer
-
-
 from bert_score import score as bert_score
 from nltk.translate.bleu_score import corpus_bleu, SmoothingFunction
 
@@ -166,18 +153,6 @@ def evaluate(model, tokenizer, max_new_tokens=2048, model_name=""):
     # Initialize ROUGE scorer
     scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
 
-    # Function to generate response
-    def generate_response(query):
-        outputs = model.generate(
-            input_ids=inputs["input_ids"].to("cuda"),
-            max_new_tokens=max_new_tokens,
-            use_cache=True,
-            temperature=0.9,
-            num_return_sequences=1
-        )
-        res = tokenizer.decode(outputs[0][inputs["input_ids"].shape[1]:], skip_special_tokens=True)
-        print(res)
-        return res
 
     def cal_score(result_container, answer, generated):
         scores = scorer.score(answer, generated)
@@ -210,10 +185,7 @@ def evaluate(model, tokenizer, max_new_tokens=2048, model_name=""):
             num_return_sequences=1
         )
         generated = tokenizer.decode(outputs[0][input_ids.shape[1]:], skip_special_tokens=True)
-        # print(f"generate: {generated}")
-        # print(f"query: {query[:100]}, len: {len(query)}")
-        # print(f"chosen: {chosen[0][:100]}, len: {len(chosen)}")
-        # print(f"rejected: {rejected[0][:100]}, len: {len(rejected)}")
+
 
         cal_score(results_with_chosen, chosen, generated)
         cal_score(results_with_rejected, rejected, generated)
@@ -282,7 +254,6 @@ def evaluate(model, tokenizer, max_new_tokens=2048, model_name=""):
     mr = cal_save_metrics(results_with_rejected, "rejected")
     return mc, mr
 
-
 wandb.ensure_configured()
 from unsloth import FastLanguageModel
 
@@ -291,7 +262,7 @@ def train_dpo(model_path, model_name):
     dtype = None
     load_in_4bit = True
     model, tokenizer = FastLanguageModel.from_pretrained(
-        model_name=f"{model_path}/{model_name}",
+        model_name=f"{model_path}/{model_name}_think_reasoning",
         max_seq_length=max_seq_length,
         dtype=dtype
     )
@@ -345,15 +316,5 @@ def train_dpo(model_path, model_name):
 
     res = evaluate(model, tokenizer, model_name=f"{model_name}_dpo")
     print(res)
-def e():
-    model, tokenizer = FastLanguageModel.from_pretrained(
-    model_name="/root/autodl-tmp/ckpts/qwen-7b-instrcut_sft2_without_sft1",
-    max_seq_length=8092,
-    dtype=None,
-    local_files_only=True
-    )
-    FastLanguageModel.for_inference(model)
-    res = evaluate(model, tokenizer, max_new_tokens=4096, model_name='Qwen2.5-7B-reasoning-test')
-    print(res)
-    
-e()
+
+train_dpo("/root/autodl-tmp/unsloth", "Qwen-7B-Instruct")
