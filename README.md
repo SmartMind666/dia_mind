@@ -21,7 +21,7 @@ graph TD
     D --> G[Multi-stage Evaluation]
     D --> H[7 Quantitative Metrics]
 ```
-##✨ Key Contributions
+## ✨ Key Contributions
 ### 1. DiaData: Integrated Diabetes Dataset
 | Component | Description | Size |
 |-----------|-------------|------|
@@ -47,17 +47,22 @@ S3 --> S4[DPO Optimization]
 S4 --> S5[Diabetes Specialist Model]
 ```
 
-##📊 Key Results
+## 📊 Key Results
 ### Data Quality Improvement
-| Answer Type | Score Improvement |
-|-------------|-------------------|
-| Online Doctor Answers | Baseline |
-| DeepSeek-V3 (Zero-shot) | +6-22% |
-| **DiaMind (Ours)** | **+28-43%** |
+<img width="1440" height="554" alt="image" src="https://github.com/user-attachments/assets/29f5e96c-0e4d-49e5-a8ed-f0291ef38a58" />
+Experimental results demonstrate that DiaMind-generated answers significantly outperform online doctor responses and zero-shot LLM outputs across all clinical evaluation dimensions.
 
-### Model Performance (Qwen-7B)
-| Training Stage | ROUGE-L | BERT Score |
-|----------------|----------|------------|
-| No SFT | 0.353 | 0.362 |
-| Medical SFT Only | 0.352 | 0.360 |
-| **Full DiaMind Training** | **0.393** | **0.380** |
+### Model Performance
+Through systematic experimentation, this study validates the efficacy of the multi-stage training framework and DiaMind dataset in
+enhancing LLMs’ diabetes management capabilities, revealing intricate interactions among domain adaptation, model architecture,
+and training strategies. Detailed experimental results are shown below.
+#### general medical subset
+<img width="1920" height="770" alt="image" src="https://github.com/user-attachments/assets/2e98008c-f6bd-48e0-abcf-754aafcc425a" />
+#### diabetes medical subset
+<img width="984" height="1038" alt="image" src="https://github.com/user-attachments/assets/f81d7265-50e0-4bcf-90ff-ef9cb3503737" />
+#### Reasoning subset (Qwen-7b-instruction)
+<img width="996" height="356" alt="image" src="https://github.com/user-attachments/assets/f2af83d6-4059-4061-a1d8-dbf48af77b15" />
+#### DPO subset
+<img width="1298" height="750" alt="image" src="https://github.com/user-attachments/assets/7a4283a5-14ed-4477-8b81-69db4e4e91bf" />
+
+
