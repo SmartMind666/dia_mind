@@ -54,7 +54,7 @@ Experimental results demonstrate that DiaMind-generated answers significantly ou
 
 ### Model Performance
 Through systematic experimentation, this study validates the efficacy of the multi-stage training framework and DiaMind dataset in
-enhancing LLMs’ diabetes management capabilities, revealing intricate interactions among domain adaptation, model architecture,
+enhancing LLMs’ diabetes management capabilities, revealing intricate interactions among domain adaptation, model architecture,
 and training strategies. Detailed experimental results are shown below.
 #### general medical subset
 
