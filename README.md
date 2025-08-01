@@ -11,16 +11,9 @@ Diabetes affects **10.2%** of global adults (IDF 2030 projection) with inadequat
 -  🧬 Interdisciplinary knowledge integration
 -  📈 Enhanced reasoning capabilities
 -   Real-world clinical applicability
-```mermaid
-graph TD
-    A[Diabetes Management Challenges] --> B[DiaMind Framework]
-    B --> C[DiaData]
-    B --> D[Diabench]
-    C --> E[541k QA Pairs]
-    C --> F[7 Management Domains]
-    D --> G[Multi-stage Evaluation]
-    D --> H[7 Quantitative Metrics]
-```
+
+<img width="2228" height="992" alt="image" src="https://github.com/user-attachments/assets/8be33cc1-0397-4d06-9f40-fb098da42512" />
+
 ## ✨ Key Contributions
 ### 1. DiaData: Integrated Diabetes Dataset
 | Component | Description | Size |
@@ -78,3 +71,5 @@ and training strategies. Detailed experimental results are shown below.
     <img width="700" alt="image" src="https://github.com/user-attachments/assets/7a4283a5-14ed-4477-8b81-69db4e4e91bf" />
 </div>
 
+## **Dataset Availability**
+The dataset is available for download [here](#) ([huggingface](https://huggingface.co/datasets/SmartMind666/DiaMind)).
