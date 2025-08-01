@@ -57,12 +57,24 @@ Through systematic experimentation, this study validates the efficacy of the mul
 enhancing LLMs’ diabetes management capabilities, revealing intricate interactions among domain adaptation, model architecture,
 and training strategies. Detailed experimental results are shown below.
 #### general medical subset
-<img width="1920" height="770" alt="image" src="https://github.com/user-attachments/assets/2e98008c-f6bd-48e0-abcf-754aafcc425a" />
-#### diabetes medical subset
-<img width="984" height="1038" alt="image" src="https://github.com/user-attachments/assets/f81d7265-50e0-4bcf-90ff-ef9cb3503737" />
-#### Reasoning subset (Qwen-7b-instruction)
-<img width="996" height="356" alt="image" src="https://github.com/user-attachments/assets/f2af83d6-4059-4061-a1d8-dbf48af77b15" />
-#### DPO subset
-<img width="1298" height="750" alt="image" src="https://github.com/user-attachments/assets/7a4283a5-14ed-4477-8b81-69db4e4e91bf" />
 
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/2e98008c-f6bd-48e0-abcf-754aafcc425a" />
+
+#### diabetes medical subset
+
+<div align="center">
+    <img width="700" alt="image" src="https://github.com/user-attachments/assets/f81d7265-50e0-4bcf-90ff-ef9cb3503737" />
+</div>
+
+#### Reasoning subset (Qwen-7b-instruction)
+
+<div align="center">
+  <img width="700" alt="image" src="https://github.com/user-attachments/assets/f2af83d6-4059-4061-a1d8-dbf48af77b15" />
+</div>
+
+#### DPO subset (Qwen-7b-instruction)
+
+<div align="center">
+    <img width="700" alt="image" src="https://github.com/user-attachments/assets/7a4283a5-14ed-4477-8b81-69db4e4e91bf" />
+</div>
 
