@@ -72,4 +72,4 @@ and training strategies. Detailed experimental results are shown below.
 </div>
 
 ## **Dataset Availability**
-The dataset is available for download [here](#) ([huggingface](https://huggingface.co/datasets/SmartMind666/DiaMind)).
+The dataset is available for download [here](#) ([huggingface](https://huggingface.co/datasets/SmartMind666/dia_mind)).
