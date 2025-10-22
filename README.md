@@ -14,6 +14,78 @@ Diabetes affects **10.2%** of global adults (IDF 2030 projection) with inadequat
 
 <img width="2228" height="992" alt="image" src="https://github.com/user-attachments/assets/8be33cc1-0397-4d06-9f40-fb098da42512" />
 
+## 🛠️ RAG Technology Enhancement
+
+### RAG Retrieval System Construction Process
+
+#### 1. Knowledge Base Architecture Design
+DiaMind has constructed two Ollama-based RAG vectorized knowledge bases:
+
+**General Medical Knowledge Base** (6 specialized fields):
+
+```python
+general_medical_kb = {
+    "internal_medicine": "Internal medicine textbook resources",
+    "obstetrics_gynecology": "Obstetrics and gynecology materials",
+    "andrology": "Andrology literature",
+    "surgery": "Surgery textbooks",
+    "pediatrics": "Pediatrics knowledge",
+    "endocrinology": "Endocrinology specialized content"
+}
+```
+
+**Diabetes-Specific Knowledge Base** (7 classification dimensions):
+```python
+diabetes_specific_kb = {
+    "complications_management": "73 monographs on complications management",
+    "disease_foundation": "46 foundational disease guidelines",
+    "clinical_evaluation": "31 clinical evaluation plans",
+    "lifestyle_intervention": "31 lifestyle intervention strategies",
+    "mental_health": "38 mental health support resources",
+    "pharmaceutical_technology": "59 references on pharmaceutical and technological treatments"
+}
+```
+
+#### 2. Document Processing & Vectorization Pipeline
+```
+Original Medical Documents → Professional Classification → Text Chunking Processing → Vectorization Encoding → Index Construction
+```
+
+#### 3. Core Retrieval System Technologies
+- **Hybrid Retrieval Strategy**: Dense vector retrieval + Keyword retrieval fusion
+- **Top-3 Evidence Recall**: Returns the 3 most relevant medical evidence snippets per query
+- **Timeliness Validation**: Prioritizes retrieval of the latest clinical guidelines and research findings
+
+### RAG System Usage Process
+
+#### 1. Query Processing & Evidence Retrieval (Pseudocode)
+```python
+def rag_retrieval(user_query, patient_context=None):
+    # Query Understanding & Expansion
+    medical_terms = extract_medical_entities(user_query)
+    expanded_queries = query_expansion(medical_terms)
+    
+    # Multi-Knowledge Base Parallel Retrieval
+    general_results = vector_search(expanded_queries, "general_medical")
+    diabetes_results = vector_search(expanded_queries, "diabetes_specific")
+    
+    # Evidence Fusion & Re-Ranking
+    ranked_evidence = clinical_reranker(
+        general_results, diabetes_results,
+        relevance_weight=0.6, recency_weight=0.3, authority_weight=0.1
+    )
+    
+    return ranked_evidence[:3]  # Return top-3 evidence snippets
+```
+
+#### 2. Knowledge-Enhanced Generation Pipeline
+```
+Patient Question      →      RAG Evidence Retrieval       →      Evidence Assessment        →       Prompt Construction          →         LLM Generation
+    ↓                                  ↓                                ↓                                   ↓                                   ↓
+Symptom Description       Clinical Guideline Snippets             Evidence Relevance                Role Setting Prompt                   Answer Generation
+Medical History           Research Literature Abstracts           Timeliness Check                  Answer Guidance 
+```
+
 ## ✨ Key Contributions
 ### 1. DiaData: Integrated Diabetes Dataset
 | Component | Description | Size |
