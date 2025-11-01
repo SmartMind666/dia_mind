@@ -1,0 +1,926 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                          RAG 目录文件清单                                       ║
+║                     RAG Directory File Inventory                              ║
+║                                     
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+总文件统计 Total Files Statistics:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• 主目录数 Main Directories: 6
+• 总PDF文件数 Total PDF Files: 278
+• 总Excel文件数 Total Excel Files: 6
+• 总文件数 Total Files: 284
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+【1】临床评估与监测 / Clinical Assessment & Monitoring
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+子目录 Subdirectory: 临床评估与监测 / Clinical Assessment & Monitoring
+文件数量 File Count: 31 个文件 (30 PDF + 1 XLSX)
+
+文件列表 File List:
+────────────────────────────────────────────────────────────────────────────────
+1. 2022 ISPADI临床实践指南 青春期糖尿病 2023-6-12 193914 14.pdf
+   (2022 ISPAD Clinical Practice Guidelines - Diabetes in Adolescence)
+
+2. 2022 ISPAD临床实践共识指南 儿童和青少年囊性纤维相关糖尿病的管理 2023-6-12 193914 5.pdf
+   (2022 ISPAD Clinical Practice Consensus Guidelines - Management of Cystic Fibrosis-Related Diabetes in Children and Adolescents)
+
+3. 2022 ISPAD临床实践共识指南 糖尿病技术一血糖监测 2023-6-12 193914 6.pdf
+   (2022 ISPAD Clinical Practice Consensus Guidelines - Diabetes Technologies: Blood Glucose Monitoring)
+
+4. 7万中国人群持续葡萄糖监测数据特征蓝皮书.pdf
+   (Blue Book on Continuous Glucose Monitoring Data Characteristics of 70,000 Chinese Population)
+
+5. A future without needles.pdf
+   (无针未来)
+
+6. Blood glucose variance measured by continuous glucose.pdf
+   (通过连续血糖监测测量的血糖变异)
+
+7. C-peptide and metabolic outcomes in trials of disease.pdf
+   (C肽与疾病试验中的代谢结局)
+
+8. Clinical Research Takes a Village.pdf
+   (临床研究需要团队协作)
+
+9. Consensus guidance for monitoring individuals with islet.pdf
+   (胰岛移植患者监测共识指南)
+
+10. Consensus Guidance for Monitoring Individuals With Islet.pdf
+    (胰岛移植患者监测共识指南)
+
+11. Consensus Guidance for Monitoring Individuals With.pdf
+    (患者监测共识指南)
+
+12. Continuous glucose monitoring and metrics for clinical.pdf
+    (连续血糖监测及临床指标)
+
+13. Definition and diagnostic criteria of clinical obesity.pdf
+    (临床肥胖的定义和诊断标准)
+
+14. Eighteen-Month Hybrid Closed-Loop Use in Very Young.pdf
+    (幼儿18个月混合闭环系统使用)
+
+15. EMBARK  A Randomized, Controlled Trial Comparing Three.pdf
+    (EMBARK：三种方案比较的随机对照试验)
+
+16. Glycemic and Psychosocial Outcomes of Advanced Hybrid.pdf
+    (先进混合闭环系统的血糖及心理社会结局)
+
+17. International Society for Pediatric andAdolescent Diabetes Clinical Practice ConsensusGuidelines 2024 Diabetes Technologies.pdf
+    (国际儿童和青少年糖尿病协会2024年临床实践共识指南 糖尿病技术)
+
+18. International Society for Pediatric andAdolescent Diabetes Clinical Practice ConsensusGuidelines 2024 Glycemic Targets.pdf
+    (国际儿童和青少年糖尿病协会2024年临床实践共识指南 血糖目标)
+
+19. Islet Autoantibody Screening Throughout Australia UsingIn-Home Blood Spot Sampling.pdf
+    (澳大利亚全国胰岛自身抗体筛查 使用家庭血斑采样)
+
+20. Limitations in Achieving Glycemic Targets From CGM Data and.pdf
+    (CGM数据实现血糖目标的局限性)
+
+21. Maternal Glycemia During Pregnancy and Child Lung Function.pdf
+    (孕期母体血糖与儿童肺功能)
+
+22. Point-of-Care HbA1c in Clinical Practice.pdf
+    (临床实践中的即时HbA1c检测)
+
+23. Real-time Continuous Glucose.pdf
+    (实时连续血糖监测)
+
+24. The Glucose Management Indicator.pdf
+    (血糖管理指标)
+
+25. Trajectories of BMI before and after diagnosis of type 2 diabetes.pdf
+    (2型糖尿病诊断前后的BMI轨迹)
+
+26. 中国血糖监测临床应用指南(2021年版).pdf
+    (Chinese Clinical Application Guidelines for Blood Glucose Monitoring, 2021 Edition)
+
+27. 中国高海拔地区血糖监测临床应用专家共识(2024版)(1).pdf
+    (Expert Consensus on Clinical Application of Blood Glucose Monitoring in High-Altitude Areas of China, 2024 Edition)
+
+28. 动态葡萄糖图谱报告临床应用专家共识(2023版).pdf
+    (Expert Consensus on Clinical Application of Ambulatory Glucose Profile Reports, 2023 Edition)
+
+29. 单个胰岛自身抗体阳性的临床意义.pdf
+    (Clinical Significance of Single Islet Autoantibody Positivity)
+
+30. 数据-临床评估与监测.xlsx
+    (Data - Clinical Assessment & Monitoring)
+
+31. 连续血糖监测(CGM)行业深度 国产加速崛起，掘金全球百亿美元市场.pdf
+    (In-depth Analysis of CGM Industry: Domestic Acceleration, Tapping into the Global Multi-Billion Dollar Market)
+
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+【2】基础知识与疾病理解 / Basic Knowledge & Disease Understanding
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+子目录 Subdirectory: 基础知识与疾病理解 / Basic Knowledge & Disease Understanding
+文件数量 File Count: 46 个文件 (46 PDF)
+
+文件列表 File List:
+────────────────────────────────────────────────────────────────────────────────
+1. 1型糖尿病、2型糖尿病、单基因糖尿病鉴别判断.pdf
+   (Differential Diagnosis of Type 1, Type 2, and Monogenic Diabetes)
+
+2. 2022 ISPAD临床实践共识指南 儿童和青少年1型糖尿病的分期 2023-6-12 193914 3.pdf
+   (2022 ISPAD Clinical Practice Consensus Guidelines - Staging of Type 1 Diabetes in Children and Adolescents)
+
+3. 2022 ISPAD临床实践指南 儿童青少年单基因糖尿病的诊断和管理 2023-6-12 193914 10.pdf
+   (2022 ISPAD Clinical Practice Guidelines - Diagnosis and Management of Monogenic Diabetes in Children and Adolescents)
+
+4. 2024版《美国糖尿病学会 糖尿病诊疗标准》更新要点解读.pdf
+   (Interpretation of 2024 ADA Standards of Care in Diabetes Update Highlights)
+
+5. 9.血糖治疗的药物方法.pdf
+   (9. Pharmacological Approaches to Glycemic Treatment)
+
+6. Bile acid metabolism in.pdf
+   (胆汁酸代谢)
+
+7. Diabetes, Prediabetes, and Brain Aging The Role of Healthy.pdf
+   (糖尿病、糖尿病前期与大脑衰老 健康的作用)
+
+8. Differential Treatment Effects on B-Cell FunctionUsing Model-Based Parameters in Type 2 Diabetes Results From the Glycemia Reduction Approaches in Diabetes A Comparative Effectiveness Study (GRADE).pdf
+   (基于模型参数的2型糖尿病β细胞功能差异治疗效果 来自GRADE研究结果)
+
+9. Dysglycaemia.pdf
+   (血糖异常)
+
+10. Efficacy and Safety of GLP-1 Medicines for Type 2 Diabetes and.pdf
+    (GLP-1药物治疗2型糖尿病的疗效和安全性)
+
+11. Increasing Medication Use and Polypharmacy in Type 2.pdf
+    (2型糖尿病中药物使用增加和多药治疗)
+
+12. ISPAD Cinica Practice consensusGuidelines 2024 Type 2 Diabetes inChildren and Adolescents.pdf
+    (ISPAD 2024年临床实践共识指南 儿童和青少年2型糖尿病)
+
+13. ISPAD Clinical Practice Consensus Guidelines.pdf
+    (ISPAD临床实践共识指南)
+
+14. Looking back at the TEDDY study.pdf
+    (回顾TEDDY研究)
+
+15. New guideline of the European Medicines Agency (EMA) on the clinical.pdf
+    (欧洲药品管理局关于临床的新指南)
+
+16. Postprandial hypoglycaemia after gastric bypass in type 2 diabetes.pdf
+    (2型糖尿病胃旁路术后餐后低血糖)
+
+17. Residual β-Cell Function Is Associated With Longer Time.pdf
+    (残余β细胞功能与更长时间相关)
+
+18. Technology advances in diabetes pregnancy.pdf
+    (糖尿病妊娠中的技术进展)
+
+19. Technology for type 1 diabetes.pdf
+    (1型糖尿病技术)
+
+20. The use of technology in type 2 diabetes and prediabetes.pdf
+    (技术在2型糖尿病和糖尿病前期中的应用)
+
+21. Understanding Diabetes.pdf
+    (理解糖尿病)
+
+22. Using Time in Tight Glucose Range as a Health-Promoting.pdf
+    (使用严格血糖范围内时间作为促进健康的指标)
+
+23. Young adult-onset type 2 diabetes heralds a poor prognosis.pdf
+    (青年发病2型糖尿病预示不良预后)
+
+24. Younger-onset compared with later-onset type 2 diabetes.pdf
+    (早发与晚发2型糖尿病的比较)
+
+25. 中国1型糖尿病诊治指南(2021版).pdf
+    (Chinese Guidelines for Diagnosis and Treatment of Type 1 Diabetes, 2021 Edition)
+
+26. 中国1型糖尿病高危人群筛查、监测.pdf
+    (Screening and Monitoring of High-Risk Population for Type 1 Diabetes in China)
+
+27. 中国儿童1型糖尿病标准化诊断与治疗专家共识(2020版).pdf
+    (Expert Consensus on Standardized Diagnosis and Treatment of Type 1 Diabetes in Chinese Children, 2020 Edition)
+
+28. 中国成人糖尿病前期干预的专家共识(2023版).pdf
+    (Expert Consensus on Intervention for Prediabetes in Chinese Adults, 2023 Edition)
+
+29. 中国糖尿病防治指南(2024版).pdf
+    (Chinese Guidelines for Prevention and Treatment of Diabetes, 2024 Edition)
+
+30. 中国老年糖尿病诊疗指南(2024版).pdf
+    (Chinese Guidelines for Diagnosis and Treatment of Diabetes in the Elderly, 2024 Edition)
+
+31. 儿童青少年糖尿病管理指南第2版.pdf
+    (Guidelines for Diabetes Management in Children and Adolescents, 2nd Edition)
+
+32. 全人群全生命周期的糖尿病五级防治策略.pdf
+    (Five-Level Prevention and Treatment Strategy for Diabetes Across Whole Population and Life Cycle)
+
+33. 国际糖尿病联盟关于负荷后1 h血糖用于诊断糖尿病前期和2型糖尿病的立场声明.pdf
+    (IDF Position Statement on 1-Hour Post-Load Glucose for Diagnosis of Prediabetes and Type 2 Diabetes)
+
+34. 妊娠期糖尿病非药物管理患者指南.pdf
+    (Patient Guidelines for Non-Pharmacological Management of Gestational Diabetes)
+
+35. 成人1型糖尿病的管理 ADA和EASD的共识报告(2021).pdf
+    (Management of Type 1 Diabetes in Adults: ADA-EASD Consensus Report, 2021)
+
+36. 成人隐匿性自身免疫糖尿病诊疗中国专家共识(2021版).pdf
+    (Chinese Expert Consensus on Diagnosis and Treatment of Latent Autoimmune Diabetes in Adults, 2021 Edition)
+
+37. 浙江省1型糖尿病住院患者临床特征及管理现状调查.pdf
+    (Survey on Clinical Characteristics and Management Status of Hospitalized Type 1 Diabetes Patients in Zhejiang Province)
+
+38. 移植后糖尿病的诊断和治疗.pdf
+    (Diagnosis and Treatment of Post-Transplant Diabetes)
+
+39. 糖尿病"三师共管"诊疗模式应用指南(2024版)(1).pdf
+    (Application Guidelines for "Three-Professional Co-Management" Model in Diabetes Care, 2024 Edition)
+
+40. 糖尿病分型诊断中国专家共识.pdf
+    (Chinese Expert Consensus on Classification and Diagnosis of Diabetes)
+
+41. 胃排空检测方法及其在糖尿病诊治中的应用.pdf
+    (Gastric Emptying Detection Methods and Their Application in Diabetes Diagnosis and Treatment)
+
+42. 胰岛B细胞衰老与2型糖尿病的研究进展.pdf
+    (Research Progress on Pancreatic β-Cell Aging and Type 2 Diabetes)
+
+43. 胰岛力医学.pdf
+    (Islet Function Medicine)
+
+44. 胰腺外分泌糖尿病的治疗进展.pdf
+    (Treatment Progress in Pancreatic Exocrine Diabetes)
+
+45. 胰腺炎后糖尿病的诊断新进展.pdf
+    (New Progress in Diagnosis of Post-Pancreatitis Diabetes)
+
+46. 默克诊疗手册 第20版 糖尿病部分.pdf
+    (Merck Manual, 20th Edition - Diabetes Section)
+
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+【3】并发症预防与管理 / Complications Prevention & Management
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+子目录 Subdirectory: 并发症预防与管理 / Complications Prevention & Management
+文件数量 File Count: 74 个文件 (73 PDF + 1 XLSX)
+
+文件列表 File List:
+────────────────────────────────────────────────────────────────────────────────
+1. 10.心血管疾病和风险管理.pdf
+   (10. Cardiovascular Disease and Risk Management)
+
+2. 11.慢性肾脏病和其风险管理.pdf
+   (11. Chronic Kidney Disease and Risk Management)
+
+3. 12.视网膜病变、神经病变和足部护理.pdf
+   (12. Retinopathy, Neuropathy, and Foot Care)
+
+4. 15.妊娠期高血糖管理.pdf
+   (15. Management of Hyperglycemia in Pregnancy)
+
+5. 1型糖尿病合并妊娠多学科综合管理专家共识.pdf
+   (Expert Consensus on Multidisciplinary Comprehensive Management of Type 1 Diabetes with Pregnancy)
+
+6. 1型糖尿病的免疫治疗进展.pdf
+   (Progress in Immunotherapy for Type 1 Diabetes)
+
+7. 2006-2022年天津市早发2型糖尿病发病特征和变化趋势分析.pdf
+   (Analysis of Incidence Characteristics and Trends of Early-Onset Type 2 Diabetes in Tianjin, 2006-2022)
+
+8. 2022 ISPAD临床实践共识指南 儿童和青少年糖尿病微血管和大血管并发症 2023-6-12 193914 9.pdf
+   (2022 ISPAD Clinical Practice Consensus Guidelines - Microvascular and Macrovascular Complications in Children and Adolescents with Diabetes)
+
+9. 2022 ISPAD临床实践共识指南 儿童青少年糖尿病相关性并发症和其他并发症 2023-6-12193914 2.pdf
+   (2022 ISPAD Clinical Practice Consensus Guidelines - Diabetes-Related and Other Complications in Children and Adolescents)
+
+10. 2022 ISPAD临床实践指南 糖尿病酮症酸中毒和高血糖高渗状态 2023-6-12 193914 12.pdf
+    (2022 ISPAD Clinical Practice Guidelines - Diabetic Ketoacidosis and Hyperglycemic Hyperosmolar State)
+
+11. 2022ISPAD临床实践指南儿童和青少年糖尿病患者的低血糖的评估和管理 2023-6-12 193914 13.pdf
+    (2022 ISPAD Clinical Practice Guidelines - Assessment and Management of Hypoglycemia in Children and Adolescents with Diabetes)
+
+12. 2024年美国糖尿病学会《糖尿病诊疗标准慢性肾脏病和风险管理》解读.pdf
+    (Interpretation of 2024 ADA Standards of Care - Chronic Kidney Disease and Risk Management)
+
+13. A-new-threat-to-obesity--vanity-sizing_landia.pdf
+    (肥胖的新威胁：虚荣尺码)
+
+14. Age of Diabetes Diagnosis and Lifetime Risk of Dementia.pdf
+    (糖尿病诊断年龄与终生痴呆风险)
+
+15. Ageing well with diabetes the role of technology.pdf
+    (糖尿病患者的健康老龄化：技术的作用)
+
+16. Association of Diabetic Ketoacidosis at Onset, Diabetes Technology Uptake, and Clinical Outcomes After 1 and 2 Years of Follow-up A Collaborative Analysis of Pediatric Registries Involving 9,269Children With Type 1 Diab.pdf
+    (糖尿病酮症酸中毒起病、糖尿病技术应用与1-2年随访临床结局的关联：涉及9269名1型糖尿病儿童的多中心登记分析)
+
+17. Associations of Diabetes and Prediabetes With Mortality and.pdf
+    (糖尿病和糖尿病前期与死亡率的关联)
+
+18. Autoimmune diseases and the risk and prognosis of latent.pdf
+    (自身免疫性疾病与潜在糖尿病的风险和预后)
+
+19. Caesarean section and risk of type 1 diabetes.pdf
+    (剖宫产与1型糖尿病风险)
+
+20. Correction-to--em-Lancet-Diabetes-Endocrinol--em--.pdf
+    (《柳叶刀糖尿病与内分泌学》勘误)
+
+21. Correction-to--em-Lancet-Diabetes-Endocrinol--em--_2.pdf
+    (《柳叶刀糖尿病与内分泌学》勘误_2)
+
+22. Correction-to--em-Lancet-Diabetes-Endocrinol--em--_3.pdf
+    (《柳叶刀糖尿病与内分泌学》勘误_3)
+
+23. Correction-to--em-Lancet-Diabetes-Endocrinol--em--_4.pdf
+    (《柳叶刀糖尿病与内分泌学》勘误_4)
+
+24. Diabetes Control and.pdf
+    (糖尿病控制)
+
+25. Hybrid closed-loop insulin therapy and risk of severe.pdf
+    (混合闭环胰岛素治疗与严重并发症风险)
+
+26. Hyperglycaemic crises in adults with diabetes.pdf
+    (成人糖尿病患者的高血糖危象)
+
+27. Hyperglycemic Crises in Adults.pdf
+    (成人高血糖危象)
+
+28. Kidney-disease-at-the-forefront-of-the-global-heal.pdf
+    (肾脏病：全球健康前沿)
+
+29. Management of Diabetes and Hyperglycemia in the Hospital.pdf
+    (医院内糖尿病和高血糖的管理)
+
+30. Measuring Outcomes of Diabetic.pdf
+    (糖尿病结局测量)
+
+31. Prevalence of Chronic Kidney Disease in Type 1 Diabetes.pdf
+    (1型糖尿病中慢性肾脏病的患病率)
+
+32. Severe Hypoglycemia and Impaired Awareness of Hypoglycemia.pdf
+    (严重低血糖与低血糖感知受损)
+
+33. The-need-for-a-type-1-diabetes-scorecard_landia.pdf
+    (1型糖尿病记分卡的需求)
+
+34. Tight versus liberal blood-glucose control in the intensive.pdf
+    (重症监护中严格vs宽松血糖控制)
+
+35. Time Below Range and Its Influence on Hypoglycemia.pdf
+    (低于目标范围时间及其对低血糖的影响)
+
+36. Treating a type 2 diabetic patient with impaired.pdf
+    (治疗肾功能受损的2型糖尿病患者)
+
+37. Vitamin-D-supplementation-to-prevent-acute-respira.pdf
+    (维生素D补充预防急性呼吸道疾病)
+
+38. What-does-renal-failure-teach-us-about-our-Nationa.pdf
+    (肾衰竭对国家医疗的启示)
+
+39. 【医脉通】世界胃肠病学组织全球指南乳糜泻(中文版)2023-6-13 1251...pdf
+    (World Gastroenterology Organisation Global Guidelines on Celiac Disease, Chinese Edition)
+
+40. 中国糖尿病合并慢性肾脏病临床管理共识.pdf
+    (Chinese Consensus on Clinical Management of Diabetes with Chronic Kidney Disease)
+
+41. 中国糖尿病肾脏病基层管理指南.pdf
+    (Chinese Guidelines for Primary Care Management of Diabetic Kidney Disease)
+
+42. 中国糖尿病肾脏病防治指南(2021年版).pdf
+    (Chinese Guidelines for Prevention and Treatment of Diabetic Kidney Disease, 2021 Edition)
+
+43. 中国糖尿病视神经病变诊断和治疗专家共识(2022年).pdf
+    (Chinese Expert Consensus on Diagnosis and Treatment of Diabetic Optic Neuropathy, 2022)
+
+44. 中国糖尿病视网膜病变远程医疗专家共识(2023年).pdf
+    (Chinese Expert Consensus on Telemedicine for Diabetic Retinopathy, 2023)
+
+45. 中国糖尿病足诊治指南(2024).pdf
+    (Chinese Guidelines for Diagnosis and Treatment of Diabetic Foot, 2024)
+
+46. 中国高尿酸血症与痛风诊疗指南.pdf
+    (Chinese Guidelines for Diagnosis and Treatment of Hyperuricemia and Gout)
+
+47. 中国高血压临床实践指南.pdf
+    (Chinese Clinical Practice Guidelines for Hypertension)
+
+48. 中国高血压防治指南(2024年修订版).pdf
+    (Chinese Guidelines for Prevention and Treatment of Hypertension, 2024 Revised Edition)
+
+49. 儿童糖尿病酮症酸中毒诊疗指南.pdf
+    (Guidelines for Diagnosis and Treatment of Diabetic Ketoacidosis in Children)
+
+50. 关于国际糖尿病足工作组2023年《糖尿病足溃疡周围动脉病变诊断、预后和治疗》.pdf
+    (Interpretation of IWGDF 2023 Guidelines on Diagnosis, Prognosis and Treatment of Peripheral Artery Disease in Diabetic Foot Ulcers)
+
+51. 国家基层糖尿病肾脏病防治技术指南(2023).pdf
+    (National Technical Guidelines for Prevention and Treatment of Diabetic Kidney Disease in Primary Care, 2023)
+
+52. 国际糖尿病足工作组《糖尿病足溃疡减压治疗指南(2023版)》的解读与应用.pdf
+    (Interpretation and Application of IWGDF Guidelines on Offloading for Diabetic Foot Ulcers, 2023 Edition)
+
+53. 基层糖尿病微血管疾病筛查与防治专家共识(2024).pdf
+    (Expert Consensus on Screening and Prevention of Diabetic Microvascular Disease in Primary Care, 2024)
+
+54. 妊娠期高血糖诊治指南(2022)[第一部分].pdf
+    (Guidelines for Diagnosis and Treatment of Hyperglycemia in Pregnancy, 2022 - Part 1)
+
+55. 妊娠期高血糖诊治指南(2022)[第二部分].pdf
+    (Guidelines for Diagnosis and Treatment of Hyperglycemia in Pregnancy, 2022 - Part 2)
+
+56. 成人糖尿病患者血压管理专家共识.pdf
+    (Expert Consensus on Blood Pressure Management in Adults with Diabetes)
+
+57. 我国糖尿病视网膜病变临床诊疗指南(2022年).pdf
+    (Chinese Clinical Guidelines for Diagnosis and Treatment of Diabetic Retinopathy, 2022)
+
+58. 数据-并发症预防与管理.xlsx
+    (Data - Complications Prevention & Management)
+
+59. 社区医疗机构糖尿病视网膜病变筛查工作流程与管理规范的专家共识(2023版).pdf
+    (Expert Consensus on Workflow and Management Standards for Diabetic Retinopathy Screening in Community Healthcare Institutions, 2023 Edition)
+
+60. 糖尿病周围神经病变的机制与治疗 最新进展与研究动态.pdf
+    (Mechanisms and Treatment of Diabetic Peripheral Neuropathy: Latest Progress and Research Trends)
+
+61. 糖尿病患者血脂管理中国专家共识(2024版).pdf
+    (Chinese Expert Consensus on Lipid Management in Patients with Diabetes, 2024 Edition)
+
+62. 糖尿病相关眼病防治多学科中国专家共识(2021年版)(1).pdf
+    (Chinese Multidisciplinary Expert Consensus on Prevention and Treatment of Diabetes-Related Eye Diseases, 2021 Edition)
+
+63. 糖尿病神经病变诊治专家共识(2021年版).pdf
+    (Expert Consensus on Diagnosis and Treatment of Diabetic Neuropathy, 2021 Edition)
+
+64. 糖尿病肾脏疾病临床诊疗中国指南.pdf
+    (Chinese Clinical Guidelines for Diagnosis and Treatment of Diabetic Kidney Disease)
+
+65. 糖尿病肾脏疾病肾性贫血认识与管理中国专家共识(2023年版).pdf
+    (Chinese Expert Consensus on Understanding and Management of Renal Anemia in Diabetic Kidney Disease, 2023 Edition)
+
+66. 糖尿病肾脏疾病诊断预后评估和生物标志物应用专家共识.pdf
+    (Expert Consensus on Diagnostic Prognostic Assessment and Biomarker Application in Diabetic Kidney Disease)
+
+67. 糖尿病胃轻瘫微生物‑肠‑脑轴治疗进展.pdf
+    (Progress in Microbiota-Gut-Brain Axis Treatment for Diabetic Gastroparesis)
+
+68. 糖尿病视网膜病变社区筛查专家共识.pdf
+    (Expert Consensus on Community Screening for Diabetic Retinopathy)
+
+69. 糖尿病足多学科团队诊疗的机遇与挑战.pdf
+    (Opportunities and Challenges in Multidisciplinary Team Management of Diabetic Foot)
+
+70. 糖尿病足溃疡创面治疗专家共识(2024).pdf
+    (Expert Consensus on Wound Treatment of Diabetic Foot Ulcers, 2024)
+
+71. 糖尿病足缺血病变腔内治疗中国专家共识.pdf
+    (Chinese Expert Consensus on Endovascular Treatment of Ischemic Lesions in Diabetic Foot)
+
+72. 终末期糖尿病肾脏病肾替代治疗的中国指南.pdf
+    (Chinese Guidelines for Renal Replacement Therapy in End-Stage Diabetic Kidney Disease)
+
+73. 近40年的欧美糖尿病足临床研究进展.pdf
+    (Progress in Clinical Research on Diabetic Foot in Europe and America over the Past 40 Years)
+
+74. 鞋具对糖尿病足溃疡高危患者预防的有效性 国际糖尿病足工作组2023年糖尿病..pdf
+    (Effectiveness of Footwear in Prevention of High-Risk Diabetic Foot Ulcers: IWGDF 2023 Guidelines)
+
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+【4】心理健康与社会支持 / Mental Health & Social Support
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+子目录 Subdirectory: 心理健康与社会支持 / Mental Health & Social Support
+文件数量 File Count: 38 个文件 (38 PDF)
+
+文件列表 File List:
+────────────────────────────────────────────────────────────────────────────────
+1. 1.改善人群护理和促进健康 糖尿病护理标准-2025 年.pdf
+   (1. Improving Population Care and Promoting Health - Standards of Care in Diabetes, 2025)
+
+2. 13.老年人糖尿病护理标准-2025年.pdf
+   (13. Standards of Care for Diabetes in Older Adults, 2025)
+
+3. 14.儿童和青少年.pdf
+   (14. Children and Adolescents)
+
+4. 16.医院的糖尿病护理.pdf
+   (16. Diabetes Care in the Hospital)
+
+5. 1型糖尿病教育师专职岗位的设立与实践.pdf
+   (Establishment and Practice of Dedicated Diabetes Educator Positions for Type 1 Diabetes)
+
+6. 1型糖尿病自我管理教育与支持专家共识(2023版).pdf
+   (Expert Consensus on Self-Management Education and Support for Type 1 Diabetes, 2023 Edition)
+
+7. 2.糖尿病的诊断和分类 糖尿病护理标准2025 年.pdf
+   (2. Diagnosis and Classification of Diabetes - Standards of Care in Diabetes, 2025)
+
+8. 2022 ISPAD临床实践共识指南 儿童、青少年和青年糖尿病患者的心理护理 2023-6-12 193914 1.pdf
+   (2022 ISPAD Clinical Practice Consensus Guidelines - Psychological Care for Children, Adolescents, and Young Adults with Diabetes)
+
+9. 2022ISPAD临床实践共识指南 儿童和青少年糖尿病教育 2023-6-12 193914 4.pdf
+   (2022 ISPAD Clinical Practice Consensus Guidelines - Diabetes Education for Children and Adolescents)
+
+10. 2024The year to take European action on diabetes to the next level.pdf
+    (2024年：将欧洲糖尿病行动提升至新水平)
+
+11. 3.预防或延缓糖尿病及相关合并症 糖尿病护理标准-2025年.pdf
+    (3. Prevention or Delay of Diabetes and Related Comorbidities - Standards of Care in Diabetes, 2025)
+
+12. 4.综合医学评估和合并症评估糖尿病护理标准-2025年.pdf
+    (4. Comprehensive Medical Evaluation and Assessment of Comorbidities - Standards of Care in Diabetes, 2025)
+
+13. 5.促进积极的健康行为和福祉，以改善健康结果.pdf
+    (5. Promoting Positive Health Behaviors and Well-being to Improve Health Outcomes)
+
+14. 6.血糖目标和低血糖.pdf
+    (6. Glycemic Targets and Hypoglycemia)
+
+15. Access to Diabetes Care Should.pdf
+    (糖尿病护理的可及性)
+
+16. Bringing an end to diabetes stigma and discrimination.pdf
+    (终结糖尿病歧视与偏见)
+
+17. Diabetes Community Pledge EU Elections.pdf
+    (糖尿病社区承诺 欧盟选举)
+
+18. Enhancing Perioperative Diabetes.pdf
+    (加强围手术期糖尿病管理)
+
+19. Genetic Discovery and Risk Prediction for Type 1 Diabetes in.pdf
+    (1型糖尿病的基因发现与风险预测)
+
+20. Large Language Models in.pdf
+    (大型语言模型在糖尿病中的应用)
+
+21. Leveraging artifcial intelligence and machine learning to accelerate.pdf
+    (利用人工智能和机器学习加速糖尿病研究)
+
+22. Lifetime Medical Spending Attributed to Incident Type 2.pdf
+    (2型糖尿病发病归因的终生医疗支出)
+
+23. Technology in the management of diabetes in hospitalised adults.pdf
+    (住院成人糖尿病管理中的技术应用)
+
+24. Ten Years of Improving Glycemic Control in Pediatric Diabetes.pdf
+    (儿科糖尿病血糖控制改善的十年)
+
+25. 中国1型糖尿病患者在校管理手册.pdf
+    (School Management Manual for Chinese Students with Type 1 Diabetes)
+
+26. 以"管理为先的价值医疗"构建数据驱动的区域性糖尿病分级诊疗体系.pdf
+    (Building Data-Driven Regional Diabetes Tiered Care System Based on "Management-First Value-Based Care")
+
+27. 信息化助力下全院血糖管理的临床实践.pdf
+    (Clinical Practice of Hospital-Wide Glucose Management with Information Technology Support)
+
+28. 医院内虚拟病区智慧化血糖综合管理.pdf
+    (Intelligent Comprehensive Glucose Management in Virtual Hospital Wards)
+
+29. 在托儿所和社区环境中照顾患有糖尿病的幼儿美国糖尿病协会的声明.pdf
+    (Care of Young Children with Diabetes in Childcare and Community Settings: ADA Statement)
+
+30. 基于Web of Science数据库的2型糖尿病.pdf
+    (Type 2 Diabetes Research Based on Web of Science Database)
+
+31. 基于信息聚合概念的全院血糖管理模式的.pdf
+    (Hospital-Wide Glucose Management Model Based on Information Aggregation Concept)
+
+32. 多部门协作实施全院血糖管理.pdf
+    (Multi-Department Collaboration in Hospital-Wide Glucose Management)
+
+33. 学校环境中的糖尿病护理美国糖尿病协会的声明.pdf
+    (Diabetes Care in the School Setting: ADA Statement)
+
+34. 拘留所中的糖尿病管理 美国糖尿病协会的声明.pdf
+    (Diabetes Management in Correctional Institutions: ADA Statement)
+
+35. 数字健康在糖尿病管理中的应用进展.pdf
+    (Progress in Application of Digital Health in Diabetes Management)
+
+36. 明明白白调血糖一纪立农、安陵王.pdf
+    (Clear Understanding of Blood Glucose Management - Ji Linong, An Lingwang)
+
+37. 甜蜜一生由自己-1型糖尿病人自助全书.pdf
+    (A Sweet Life by Yourself - Complete Self-Help Guide for People with Type 1 Diabetes)
+
+38. 糖尿病与就业 糖尿病护理 美国糖尿病协会.pdf
+    (Diabetes and Employment: ADA Statement on Diabetes Care)
+
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+【5】生活方式管理 / Lifestyle Management
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+子目录 Subdirectory: 生活方式管理 / Lifestyle Management
+文件数量 File Count: 31 个文件 (30 PDF + 1 XLSX)
+
+文件列表 File List:
+────────────────────────────────────────────────────────────────────────────────
+1. 《中国糖尿病医学营养治疗指南(2022版)》解读.pdf
+   (Interpretation of Chinese Guidelines for Medical Nutrition Therapy in Diabetes, 2022 Edition)
+
+2. 2022ISPAD临床实践指南 儿童青少年糖尿病患者运动.pdf
+   (2022 ISPAD Clinical Practice Guidelines - Exercise in Children and Adolescents with Diabetes)
+
+3. Carbohydrates-Last Food Order.pdf
+   (碳水化合物最后进食顺序)
+
+4. Exercise management in type 1 diabetes.pdf
+   (1型糖尿病的运动管理)
+
+5. Exercise management in type 1 diabetesa consensus翻译.pdf
+   (1型糖尿病运动管理共识 译文)
+
+6. Higher fbre and lower carbohydrate intake are associated.pdf
+   (高纤维低碳水化合物摄入的相关性)
+
+7. Nutritional Status, Dietary Intake, and Nutrition-Related.pdf
+   (营养状况、膳食摄入与营养相关问题)
+
+8. The Glycemic lmpact of Protein Ingestion in People With Type 1 Diabetes.pdf
+   (蛋白质摄入对1型糖尿病患者血糖的影响)
+
+9. 中国2型糖尿病运动治疗指南(2024版).pdf
+   (Chinese Guidelines for Exercise Therapy in Type 2 Diabetes, 2024 Edition)
+
+10. 中国居民膳食指南(2022).pdf
+    (Dietary Guidelines for Chinese Residents, 2022)
+
+11. 中国成人糖尿病肾脏疾病医学营养治疗专家专识(2022).pdf
+    (Expert Consensus on Medical Nutrition Therapy for Diabetic Kidney Disease in Chinese Adults, 2022)
+
+12. 中国糖尿病医学营养治疗指南(2022版).pdf
+    (Chinese Guidelines for Medical Nutrition Therapy in Diabetes, 2022 Edition)
+
+13. 中国食物成分表标准版第6版第1册.pdf
+    (China Food Composition Tables, Standard Edition, Vol. 6, Book 1)
+
+14. 中国食物成分表标准版第6版第2册.pdf
+    (China Food Composition Tables, Standard Edition, Vol. 6, Book 2)
+
+15. 体医融合糖尿病运动干预专家共识.pdf
+    (Expert Consensus on Exercise Intervention for Diabetes with Integration of Sports and Medicine)
+
+16. 儿童青少年肥胖食养指南.pdf
+    (Dietary Guidelines for Obesity in Children and Adolescents)
+
+17. 成人慢性肾脏病食养指南(2024年版).pdf
+    (Dietary Guidelines for Chronic Kidney Disease in Adults, 2024 Edition)
+
+18. 成人糖尿病食养指南(2023年版).pdf
+    (Dietary Guidelines for Diabetes in Adults, 2023 Edition)
+
+19. 成人肥胖食养指南(2024年版).pdf
+    (Dietary Guidelines for Obesity in Adults, 2024 Edition)
+
+20. 成人高尿酸血症与痛风食养指南(2024年版)方海琴.pdf
+    (Dietary Guidelines for Hyperuricemia and Gout in Adults, 2024 Edition - Fang Haiqin)
+
+21. 成人高尿酸血症与痛风食养指南72天食谱分析 杨雅琴.pdf
+    (72-Day Menu Analysis for Dietary Guidelines on Hyperuricemia and Gout in Adults - Yang Yaqin)
+
+22. 成人高脂血症食养指南(2023年版).pdf
+    (Dietary Guidelines for Hyperlipidemia in Adults, 2023 Edition)
+
+23. 控糖二十四小时.pdf
+    (24-Hour Blood Glucose Control)
+
+24. 控糖革命 48M.pdf
+    (Glucose Revolution - 48M)
+
+25. 数据-生活方式管理.xlsx
+    (Data - Lifestyle Management)
+
+26. 糖尿病和驾驶.pdf
+    (Diabetes and Driving)
+
+27. 糖尿病患者体重管理专家共识(2024版).pdf
+    (Expert Consensus on Weight Management in Patients with Diabetes, 2024 Edition)
+
+28. 肥胖患者的长期体重管理及药物临床应用指南(2024版).pdf
+    (Guidelines for Long-term Weight Management and Pharmacological Application in Obese Patients, 2024 Edition)
+
+29. 超重 肥胖多囊卵巢综合征患者体重管理内分泌专家共识.pdf
+    (Endocrine Expert Consensus on Weight Management in Overweight and Obese Patients with Polycystic Ovary Syndrome)
+
+30. 运动联合营养缓解2型糖尿病的专家共识.pdf
+    (Expert Consensus on Exercise Combined with Nutrition for Type 2 Diabetes Relief)
+
+31. 麦当劳KFC碳水表.pdf
+    (McDonald's and KFC Carbohydrate Chart)
+
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+【6】药物与技术辅助 / Medication & Technology-Assisted Therapy
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+子目录 Subdirectory: 药物与技术辅助 / Medication & Technology-Assisted Therapy
+文件数量 File Count: 59 个文件 (58 PDF + 1 XLSX)
+
+文件列表 File List:
+────────────────────────────────────────────────────────────────────────────────
+1. 2022 ISPAD临床实践共识指南 儿童和青少年糖尿病患者胰岛素治疗 2023-6-12 193914 8.pdf
+   (2022 ISPAD Clinical Practice Consensus Guidelines - Insulin Treatment in Children and Adolescents with Diabetes)
+
+2. 2022ISPAD临床实践共识指南 糖尿病技术一胰岛素输送 2023-6-12 193914 7.pdf
+   (2022 ISPAD Clinical Practice Consensus Guidelines - Diabetes Technologies: Insulin Delivery)
+
+3. 7.糖尿病技术.pdf
+   (7. Diabetes Technologies)
+
+4. A Randomized Comparison of Postprandial Glucose Excursion.pdf
+   (餐后血糖波动的随机对照比较)
+
+5. A Randomized Trial Comparing Inhaled Insulin Plus Basal.pdf
+   (吸入胰岛素加基础胰岛素的随机对照试验)
+
+6. A rapid chemical reprogramming system to.pdf
+   (快速化学重编程系统)
+
+7. A speedy cocktail.pdf
+   (快速鸡尾酒疗法)
+
+8. Automated Insulin Delivery for.pdf
+   (自动胰岛素输送)
+
+9. Automated insulin delivery postpartum.pdf
+   (产后自动胰岛素输送)
+
+10. Automated Insulin Delivery.pdf
+    (自动胰岛素输送)
+
+11. CGM全球发展四大趋势.pdf
+    (Four Major Trends in Global CGM Development)
+
+12. Closed-Loop Insulin Therapy for People With Type 2 Diabetes.pdf
+    (2型糖尿病患者的闭环胰岛素治疗)
+
+13. Combination SGLT2 Inhibitor and Glucagon Receptor Antagonist.pdf
+    (SGLT2抑制剂与胰高血糖素受体拮抗剂联合治疗)
+
+14. Compounded GLP-1 and Dual.pdf
+    (复方GLP-1与双重激动剂)
+
+15. Consensus Considerations and.pdf
+    (共识考虑事项)
+
+16. Development of a new health‑related quality of life measure.pdf
+    (开发新的健康相关生活质量测量工具)
+
+17. Diabetes Overtreatment and Hypoglycemia in Older Patients.pdf
+    (老年患者糖尿病过度治疗与低血糖)
+
+18. Effect of 48 Months of Closed-Loop Insulin Delivery on Residual.pdf
+    (48个月闭环胰岛素输送对残余胰岛功能的影响)
+
+19. Efficacy and Safety of a Tubeless AID System Compared With Pump.pdf
+    (无管路AID系统与胰岛素泵的疗效和安全性比较)
+
+20. Emerging routes to the generation of.pdf
+    (产生胰岛细胞的新途径)
+
+21. Harnessing cellular therapeutics for.pdf
+    (利用细胞疗法治疗糖尿病)
+
+22. History and current status of clinical studies using human pluripotent stem.pdf
+    (人多能干细胞临床研究的历史与现状)
+
+23. International Society for Pediatric and.pdf
+    (国际儿童和青少年糖尿病协会)
+
+24. Once‑weekly insulins.pdf
+    (每周一次胰岛素)
+
+25. One-Year Thermostability of Commercial.pdf
+    (商业胰岛素的一年热稳定性)
+
+26. Simplifed meal announcement study (SMASH) using hybrid.pdf
+    (使用混合闭环系统的简化餐前公告研究SMASH)
+
+27. Stem-cell therapy for diabetes.pdf
+    (干细胞疗法治疗糖尿病)
+
+28. The era of GLP-1 receptor agonists.pdf
+    (GLP-1受体激动剂时代)
+
+29. The future is here an overview of technology in diabetes.pdf
+    (未来已来：糖尿病技术概览)
+
+30. The relationship of changes in insulin demand and insulin adequacy.pdf
+    (胰岛素需求变化与胰岛素充足性的关系)
+
+31. The role of automated insulin delivery technology in diabetes.pdf
+    (自动胰岛素输送技术在糖尿病中的作用)
+
+32. The use of automated insulin delivery around physical activity.pdf
+    (体育活动期间自动胰岛素输送的使用)
+
+33. ThinkLikeaPancreas,3rdEdition.pdf
+    (像胰腺一样思考，第3版)
+
+34. Transplantation of chemically induced pluripotent.pdf
+    (化学诱导多能干细胞移植)
+
+35. 中国2型糖尿病患者对口服降糖药支付.pdf
+    (Payment for Oral Antidiabetic Drugs by Chinese Type 2 Diabetes Patients)
+
+36. 中国糖尿病药物注射技术指南(2016年版).pdf
+    (Chinese Guidelines for Injection Technique in Diabetes, 2016 Edition)
+
+37. 中国胰岛素泵治疗指南(2021年版)..pdf
+    (Chinese Guidelines for Insulin Pump Therapy, 2021 Edition)
+
+38. 中国胰岛素泵治疗指南(2021年版).pdf
+    (Chinese Guidelines for Insulin Pump Therapy, 2021 Edition)
+
+39. 中国胰岛素泵院内护理质量控制专家共识.pdf
+    (Chinese Expert Consensus on Quality Control of Inpatient Insulin Pump Nursing)
+
+40. 二甲双胍的作用机制新进展.pdf
+    (New Progress in Mechanism of Action of Metformin)
+
+41. 像胰腺-样思考 Think Like a Pancreas all.pdf
+    (Think Like a Pancreas - Complete Edition)
+
+42. 动态葡萄糖图谱报告护理应用专家共识.pdf
+    (Expert Consensus on Nursing Application of Ambulatory Glucose Profile Reports)
+
+43. 在临床实践中使用自动胰岛素输注技术的共识建议.pdf
+    (Consensus Recommendations for Use of Automated Insulin Delivery Technology in Clinical Practice)
+
+44. 如何用好胰岛素泵.pdf
+    (How to Use Insulin Pump Effectively)
+
+45. 妊娠期全程使用胰岛素治疗的1型糖尿病与2型糖尿病孕妇母儿不良结局及影响因素.pdf
+    (Maternal and Fetal Adverse Outcomes and Influencing Factors in Type 1 and Type 2 Diabetes Pregnant Women Using Insulin Throughout Pregnancy)
+
+46. 开源人工胰腺系统回顾.pdf
+    (Review of Open-Source Artificial Pancreas Systems)
+
+47. 开源自动胰岛素输注系统 国际共识声明和医疗保健专业人员实用指南.pdf
+    (Open-Source Automated Insulin Delivery Systems: International Consensus Statement and Practical Guide for Healthcare Professionals)
+
+48. 数据-药物与技术辅助.xlsx
+    (Data - Medication & Technology-Assisted Therapy)
+
+49. 百年历史回顾 再谈胰高血糖素.pdf
+    (A Century of History: Revisiting Glucagon)
+
+50. 胰岛素可及性和可负担性工作组。胰岛素可及性和可负担性工作组 结论和建议.pdf
+    (Insulin Access and Affordability Working Group: Conclusions and Recommendations)
+
+51. 胰岛素注射相关皮下脂肪增生防治中国专家共识.pdf
+    (Chinese Expert Consensus on Prevention and Treatment of Subcutaneous Lipohypertrophy Related to Insulin Injection)
+
+52. 胰岛素泵治疗糖尿病(第2版)电子书.pdf
+    (Insulin Pump Therapy for Diabetes, 2nd Edition - E-book)
+
+53. 胰岛素种类及作用(含肽类针剂)(1)2023-6-12 103032 2.pdf
+    (Types and Actions of Insulin Including Peptide Injections)
+
+54. 胰岛素自身免疫综合征诊治专家共识(2024版).pdf
+    (Expert Consensus on Diagnosis and Treatment of Insulin Autoimmune Syndrome, 2024 Edition)
+
+55. 胰高糖素样肽-1受体激动剂类药物结合生活方式干预减重专家共识(2024版).pdf
+    (Expert Consensus on Weight Loss with GLP-1 Receptor Agonists Combined with Lifestyle Intervention, 2024 Edition)
+
+56. 自体人化学重编程多能干细胞来源的胰岛细胞移植治疗1型糖尿病临床研究解读及临.pdf
+    (Interpretation of Clinical Study on Autologous Human Chemically Reprogrammed Pluripotent Stem Cell-Derived Islet Cell Transplantation for Type 1 Diabetes)
+
+57. 自动胰岛素递送 益处、挑战和建议.pdf
+    (Automated Insulin Delivery: Benefits, Challenges, and Recommendations)
+
+58. 钠-葡萄糖共转运蛋白2抑制剂的药理作用机制和临床应用前景.pdf
+    (Pharmacological Mechanism and Clinical Application Prospects of SGLT2 Inhibitors)
+
+59. 钠-葡萄糖共转运蛋白2抑制剂联合胰岛素治疗2型糖尿病中国专家共识(2023版).pdf
+    (Chinese Expert Consensus on SGLT2 Inhibitors Combined with Insulin for Type 2 Diabetes, 2023 Edition)
+
+
+════════════════════════════════════════════════════════════════════════════════
+                                  文档结束
+                               End of Document
+════════════════════════════════════════════════════════════════════════════════
+
+报告生成信息 Report Generation Info:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• 文件格式 File Format: UTF-8 Text Document
+• 语言版本 Language Version: 中文/英文双语 (Chinese/English Bilingual)
+
